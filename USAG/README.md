@@ -193,17 +193,11 @@ TARGET_BACKEND_URL=http://localhost:9000
 
 🚀 Running the Gateway
 
-Start backend service (if using sample backend):
+Start backend service (if using sample backend): uvicorn sample_backend.main:app --port 9000
 
-uvicorn sample_backend.main:app --port 9000
+Start gateway: uvicorn app.main:app --reload
 
-Start gateway:
-
-uvicorn app.main:app --reload
-
-Gateway runs at:
-
-http://127.0.0.1:8000
+Gateway runs at: http://127.0.0.1:8000
 
 🧪 Postman Test Flow
 1️⃣ Health Check
@@ -333,5 +327,6 @@ Webhook alerts for high-risk events
 OpenAPI-based auto compliance tagging
 
 📄 License
+
 
 MIT License
